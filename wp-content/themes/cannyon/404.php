@@ -42,9 +42,9 @@
 
                     <div>
                         <h1 class="error-404"><?php echo number_format_i18n( 404 ); ?></h1>
-                        <big class="error-404-message"><?php _e( 'Resource not found' , 'cannyon' )?></big>
-                        <p class="error-404-description"><?php _e( 'We apologize but this page, post or resource does not exist or can not be found.' , 'cannyon' ) ?></p>
-
+                        <!--<big class="error-404-message"><?php _e( 'Resource not found' , 'cannyon' )?></big>-->
+                        <p class="error-404-description"><?php _e( 'We apologize but this page does not exist or can not be found.' , 'cannyon' ) ?></p>
+                        <p class="error-404-description">Click <a href="/">here</a> to go back to the home page or try searching for what you're looking for using the form below.</p>
                         <div class="error-404-search">
                             <?php get_search_form(); ?>
                         </div>

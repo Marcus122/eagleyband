@@ -168,7 +168,7 @@ textarea:focus{
 section.col-lg-12 div.mythemes-page form{
     background: #ffffff;
     padding: 20px 30px;
-    margin-top: 30px;
+    /*margin-top: 30px;*/
     margin-bottom: 30px;
 
     -webkit-border-radius: 5px;
@@ -209,4 +209,8 @@ div.wpcf7-response-output.wpcf7-validation-errors{
 div.wpcf7-response-output.wpcf7-mail-sent-ok{
     background-color: #e4ffba;
     color: #92c522;
+}
+
+form .required {
+    color:#FF0000;
 }
