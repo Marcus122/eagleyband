@@ -121,7 +121,7 @@
     div.widget_search button[type="submit"]:hover,
     div.widget_calendar table th,
     footer aside div.widget_calendar table th{
-        background-color: <?php echo esc_attr( $cl2 ); ?>;
+        //background-color: <?php echo esc_attr( $cl2 ); ?>;
     }
 
     @media ( max-width: 1024px ) {

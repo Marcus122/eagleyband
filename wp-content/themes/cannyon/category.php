@@ -30,7 +30,7 @@
                                     <li></li>
                                 </ul>
                             </nav>
-                            <h1><?php _e( 'Category Archives' , 'cannyon' ); ?></h1>
+                            <h1><?php echo get_category(absint(get_query_var( 'cat' )))->name; ?></h1>
                         </div>
 
                         <div class="col-sm-4 col-md-3 col-lg-3 mythemes-posts-found">

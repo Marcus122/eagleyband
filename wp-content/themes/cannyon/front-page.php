@@ -6,6 +6,7 @@
 	$are_active_sidebars =  is_active_sidebar( 'front-page-header-first' ) ||
                             is_active_sidebar( 'front-page-header-second' ) ||
                             is_active_sidebar( 'front-page-header-third' );
+    
     $items_class = '';
 
     /* WP CUSTOMIZE */
@@ -19,7 +20,7 @@
         $items = $are_active_sidebars || (bool)get_theme_mod( 'mythemes-default-content', true );
     }
 
-    if( $items ){
+    if( $items && $are_active_sidebars){
 ?>
     <div class="mythemes-white mythemes-default-content <?php echo esc_attr( $items_class ); ?>">
         <div class="content">
