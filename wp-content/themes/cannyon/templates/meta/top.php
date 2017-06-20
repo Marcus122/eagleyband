@@ -14,8 +14,14 @@
 
             <!-- DATE -->
             <?php
-                $t_time = get_post_time( 'Y-m-d', false , $post -> ID  );
-                $u_time = get_post_time( esc_attr( get_option( 'date_format' ) ) );
+            
+                if (get_post_meta($post->ID, 'date', true)) {
+                    $t_time = get_post_meta($post->ID, 'date', true);
+                    $u_time = $t_time;
+                } else {
+                    $t_time = get_post_time( 'Y-m-d', false , $post -> ID  );
+                    $u_time = get_post_time( esc_attr( get_option( 'date_format' ) ) );
+                }
             ?>
             <time datetime="<?php echo esc_attr( $t_time ); ?>"><?php echo sprintf( __( 'on %s' , 'cannyon' ), $u_time, false, $post -> ID, true ); ?></time>
 

@@ -1,9 +1,9 @@
 <?php
 
-function wpb_load_widget() {
+function load_widget_twitter() {
 	register_widget( 'twitter_widget' );
 }
-add_action( 'widgets_init', 'wpb_load_widget' );
+add_action( 'widgets_init', 'load_widget_twitter' );
 
 class twitter_widget extends WP_Widget {
 
