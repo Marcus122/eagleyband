@@ -43,7 +43,7 @@ div.widget.event_post_meta ul li i {
 
 /* Header*/
 div.mythemes-page-header {
-    background:url(header-banner.jpg) no-repeat center -13px;   
+    background:#000 url(header-banner.jpg) no-repeat center -13px;   
     position:relative;
 }
 div.mythemes-page-header .container {

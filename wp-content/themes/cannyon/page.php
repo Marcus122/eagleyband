@@ -17,8 +17,9 @@
             }
 
             if( $breadcrumbs ){
+                $headerNum = get_post_meta($post->ID, 'header_number', true);
         ?>
-                <div class="mythemes-page-header <?php echo esc_attr( $classes ); ?>">
+                <div class="mythemes-page-header <?php echo esc_attr( $classes ); ?>"<?php if($headerNum && is_numeric($headerNum)):?> style="background-image:url(<?php echo plugins_url( 'public/header-banner' . $headerNum . '.jpg', EAGLEY_PLUGIN );?>)"<?php endif;?>>
 
                     <div class="container">
                         <div class="row">
