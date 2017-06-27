@@ -22,7 +22,7 @@
                             <?php global $wp_customize; ?>
 
                             <!-- COLLAPSE BUTTON -->
-                            <button type="button" class="btn-collapse"><i class="mythemes-icon-plus-2"></i></button>
+                            <button type="button" class="btn-collapse"><i class="mythemes-icon-menu"></i></button>
 
                             <!-- LOGO / TITLE / DESCRIPTION -->
                             <?php

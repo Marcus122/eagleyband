@@ -86,3 +86,8 @@ input[type="submit"].wpcf7-submit {
 input, select {
     height:40px;
 }
+
+/*Gallery styles*/
+.page .main-content .ngg-gallery-thumbnail img {
+    padding:0px;
+}
