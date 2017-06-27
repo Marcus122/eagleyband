@@ -7,3 +7,10 @@ RewriteCond %{REQUEST_FILENAME} !-d
 RewriteRule . /index.php [L]
 </IfModule>
 
+#Redirects for old site
+Redirect /event /events
+Redirect /band/history /history
+Redirect /contact-us /contact
+Redirect /band/gallery /gallery
+Redirect /band/support-the-band /support-the-band
+
